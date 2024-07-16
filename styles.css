@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Glitch+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Glitch+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Glitch+Pop&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Beiruti:wght@200..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0%;
+  background-color: #f4f6f8;
+}
+.nav-sm {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.bar {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #ffffff;
+  width: 24px;
+  height: 3px;
+}
+.nav-sm-items {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  background-color: #ffffff;
+  width: 20%;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  border-radius: 6px;
+  color: #212121;
+}
+.nav-sm-items a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid grey;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.hide {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.nav-sm-items a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+
+.landing_area {
+  text-align: center;
+  background-color: #1f2123;
+  color: aliceblue;
+}
+.landing_area li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+  transition-property: color, border;
+  transition: linear, 0.5s;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #323233;
+}
+.landing_area li:hover {
+  cursor: pointer;
+  color: #feff86;
+  border-color: #feff86;
+}
+
+.landing_area img {
+  border: 2px, solid, #feff86;
+  border-radius: 100%;
+  margin-top: 20px;
+  zoom: 200%;
+}
+#h-3 {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  font-variant-caps: small-caps;
+  letter-spacing: 25px;
+  margin-top: 5px;
+  text-align: center;
+}
+#lang {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+.landing_area h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 0px;
+}
+.landing_area_head {
+  height: 95vh;
+}
+.landing_area_foot a {
+  color: white;
+}
+.landing_area_foot {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  background-color: #323233;
+  height: 5vh;
+}
+.footer_sec {
+  background-color: #323233;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+.footer_sec p {
+  margin: 1px 0px 0px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  color: black;
+}
+.footer_sec img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+ border-radius: 50px;
+  filter: grayscale(100%);
+  transition: all 0.5s linear;
+}
+.footer_sec img:hover {
+  filter: grayscale(0%);
+}
+.main_content {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.main_content h2 {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.about_me p {
+  font-family: "Beiruti", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 20%;
+  text-align: right;
+  line-height: 20px;
+}
+.about_me {
+  padding-bottom: 35px;
+  border-bottom: 2px solid #feff86;
+}
+.project_area {
+  margin-bottom: 50px;
+}
+.project_area h2 {
+  margin-bottom: 20px;
+}
+.project_card_area {
+  width: 100%;
+  text-align: center;
+}
+.project_card {
+  width: 20%;
+  background-color: white;
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  min-height: 350px;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.4s linear;
+  opacity: 0.6;
+}
+.project_card:hover {
+  transform: scale(1.03);
+  opacity: 1;
+  box-shadow: 5px 5px 30px #424242;
+}
+.gap5 {
+  margin: 5px;
+}
+.image1 {
+  border-bottom: 2px solid #f4f6f8;
+  text-align: center;
+}
+.image1 img {
+  width: 100%;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+.project_card:hover img {
+  filter: grayscale(0%);
+}
+.project_content h4 {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.project_content {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.project_content p {
+  color: #bdbdbd;
+}
+.project_content h4,
+.project_content p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+.project_card {
+  position: relative;
+  top: 15px;
+}
+.project_card p {
+  margin-top: 0px;
+  font-size: 15px;
+}
+.project_buttons {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  width: 100%;
+}
+.project_buttons button {
+  line-height: 25px;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  width: calc(50%-30px);
+  margin-left: 2px;
+  margin-right: 2px;
+
+  /* color: white; */
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  transition: all 0.2s linear;
+}
+.btn_primary {
+  color: #00796b;
+  border: 2px solid #00796b;
+}
+.btn_sec {
+  color: #055698;
+  border: 2px solid #055698;
+}
+.btn_primary:hover {
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+}
+.btn_sec:hover {
+  background-color: #055698;
+  color: white;
+  cursor: pointer;
+}
+#contact-button {
+  display: block;
+  margin: 50px auto;
+  padding: 10px 20px;
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5ms linear;
+}
+
+#contact-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+#contact-heading {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #5e5d5d;
+}
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 1350px) {
+  .project_card {
+    width: 40%;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .image1 img {
+    width: 70%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 999px) {
+  .project_card {
+    width: 60%;
+  }
+  .landing_area_foot {
+    font-size: 15px;
+  }
+  .main_content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .image1 img {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .main_content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .landing_area img {
+    zoom: 0%;
+  }
+  #h-3 {
+    font-size: 50px;
+    margin-left: 10px;
+  }
+  #lang {
+    font-size: 25px;
+  }
+  .landing_area h2 {
+    font-size: 30px;
+  }
+  .landing_area_foot {
+    font-size: 15px;
+  }
+  .about_me p {
+    padding-left: 0px;
+    text-align: justify;
+  }
+  .project_card {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .popup-content {
+    width: 200px;
+    height: 400px;
+  }
+}
