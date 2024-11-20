@@ -27,8 +27,8 @@ body {
   position: absolute;
   top: 70px;
   right: 40px;
-  background-color: #ffffff;
-  width: 20%;
+  /* background-color: #ffffff; */
+  width: 50%;
   font-size: 15px;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -37,24 +37,35 @@ body {
 }
 .nav-sm-items a {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-bottom: 4px;
-  border-bottom: 2px solid grey;
+  padding: 12px 20px;
+  margin-bottom: 8px;
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 200; /* Adjusted for consistency */
+  color: white; /* Matches text color with the theme */
+  background-color: #323233; /* Dark background to match the theme */
+  border-radius: 2px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effect */
 }
-.hide {
-  display: none;
+
+.nav-sm-items a:hover {
+  background-color: #feff86; /* Lighter hover color to match your theme */
+  color: #323233; /* Dark text on hover for contrast */
 }
-.hide {
-  display: none;
-}
+
 .nav-sm-items a:visited {
+  color: white; /* Keep the text color consistent after clicking */
+}
+.hide {
+  display: none;
+}
+.hide {
+  display: none;
+}
+/* .nav-sm-items a:visited {
   color: #212121;
   text-decoration: none;
-}
+} */
 
 .landing_area {
   text-align: center;
@@ -159,15 +170,158 @@ body {
 .about_me p {
   font-family: "Beiruti", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   padding-left: 20%;
-  text-align: right;
-  line-height: 20px;
+  text-align: center;
+  line-height: 30px;
 }
 .about_me {
   padding-bottom: 35px;
   border-bottom: 2px solid #feff86;
 }
+.education_area {
+  text-align: left;
+  margin: 30px auto;
+  padding: 20px;
+ border-bottom: 2px solid #feff86;
+}
+.edu{
+  padding-bottom: 80px;
+}
+.education_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.education_item {
+  background-color: #323233;
+  color: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.education_item:hover{
+transform: scale(1.05);
+box-shadow: 0 0 20px 5px rgba(10, 5, 11, 0.731);
+}
+.education_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area of the card */
+}
+.education_item h3 {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+}
+
+.education_item p {
+  font-size: 16px;
+  font-family: "Beiruti", sans-serif;
+  margin: 5px 0;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .education_list {
+    width: 90%;
+  }
+
+  .education_item {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .education_item {
+    padding: 15px;
+    font-size: 14px; /* Smaller text for mobile devices */
+  }
+
+  .education_item h3 {
+    font-size: 20px; /* Smaller headings */
+  }
+
+  .education_list {
+    gap: 15px; /* Reduce the gap between items */
+  }
+}
+
+
+.skills_area {
+  text-align: left;
+  margin: 30px auto;
+  padding: 20px;
+  border-bottom: 2px solid #feff86;
+}
+
+.skills_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill_card {
+  background-color: #323233;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card_content {
+  transition: all 0.3s ease;
+}
+
+.card_content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.card_content p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.skill_card:hover .card_content p {
+  opacity: 1;
+  visibility: visible;
+}
+.skill_card:hover {
+  background: linear-gradient(135deg, #c4b7bf, #ab927f);
+}
+.skill_card:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+
 .project_area {
   margin-bottom: 50px;
 }
@@ -394,12 +548,14 @@ button:hover {
   .project_card {
     width: 60%;
   }
+  
   .landing_area_foot {
     font-size: 15px;
   }
   .main_content {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 50px;
   }
   .image1 img {
     width: 50%;
@@ -409,10 +565,11 @@ button:hover {
   .main_content {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 50px;
   }
-  .landing_area img {
+  /* .landing_area img {
     zoom: 0%;
-  }
+  } */
   #h-3 {
     font-size: 50px;
     margin-left: 10px;
@@ -428,7 +585,10 @@ button:hover {
   }
   .about_me p {
     padding-left: 0px;
+    margin: 15px;
     text-align: justify;
+    line-height: 23px;
+    font-size: 20px;
   }
   .project_card {
     margin-left: 2px;
@@ -439,5 +599,45 @@ button:hover {
   .popup-content {
     width: 300px;
     height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .skills_grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller cards for narrow screens */
+    gap: 15px;
+  }
+
+  .skill_card {
+    padding: 15px;
+  }
+
+  .card_content h3 {
+    font-size: 18px; /* Smaller headings */
+  }
+
+  .card_content p {
+    font-size: 12px; /* Smaller descriptions */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills_area {
+    padding: 10px;
+  }
+
+  .skills_grid {
+    gap: 10px;
+  }
+
+  .skill_card {
+    padding: 10px;
+  }
+
+  .card_content h3 {
+    font-size: 16px;
+  }
+
+  .card_content p {
+    font-size: 11px;
   }
 }
